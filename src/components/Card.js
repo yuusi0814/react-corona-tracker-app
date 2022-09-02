@@ -1,7 +1,7 @@
-const Card = (props) => {
+const Card = ({ allCountriesData }) => {
   return (
     <div>
-      {props.allCountriesData.map((singleData, index) => (
+      {allCountriesData.map((singleData, index) => (
         <div key={index}>
           <h2>{singleData.Country}</h2>
           <p>新規感染者: {singleData.NewConfirmed}</p>
